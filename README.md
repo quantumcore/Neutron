@@ -14,8 +14,18 @@ $ git clone https://github.com/Fahad-M/Neutron.git
 $ cd Neutron
 $ sudo chmod +x install.sh
 $ ./install.sh
+```
+
+# How to Run
+```
 $ python3 neutron.py
 ```
+
+# How it works
+This program uses Mingw Cross compiler to compile the Code to Windows Executable. The uses Wine to run it.
+
+# Using for real time Development
+<span style="color: red"><strong>It is highly recommended to NOT use this for Development! Use a Windows Machine for creating Window Development.</strong></span>
 
 # Dealing with Errors
 This Project is still in development. There may be alot of Errors that I don't know of. If you stumbled upon an Error, Please Report it.
