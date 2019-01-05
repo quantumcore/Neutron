@@ -25,8 +25,9 @@ $ python3 neutron.py
 This program uses Mingw Cross compiler to compile the Code to Windows Executable. The uses Wine to run it.
 
 # Using for real time Development
-<strong><span style="color: red">It is highly recommended to NOT use this for Development! Use a Windows Machine for creating Window Development.</span></strong>
-
+```diff
+- It is highly recommended to NOT use this for Development! Use a Windows Machine for creating Window Development.
+```
 # Dealing with Errors
 This Project is still in development. There may be alot of Errors that I don't know of. If you stumbled upon an Error, Please Report it.
 PS : I would really appreciate if you would Contribute.
