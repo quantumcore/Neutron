@@ -5,7 +5,6 @@
           <h1 align="center">🌟 Neutron 🌟</h1>
           <p align="center">
           Easily Compile C/C++ Code on Linux for Windows!
-          -------------- www.fahadm.co.nf --------------
           </p>
 </p>
 
@@ -33,3 +32,8 @@ This program uses Mingw Cross compiler to compile the Code to Windows Executable
 This Project is still in development. There may be alot of Errors that I don't know of. If you stumbled upon an Error, Please Report it.
 PS : I would really appreciate if you would Contribute.
 
+
+# Contact
+Fahad Mustafa -
+
+[Website](www.fahadm.co.nf)
