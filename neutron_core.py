@@ -45,7 +45,7 @@ def check_for_update():
     except Exception as e:
         status =  "Unknown error occured : " + str(e)
         
-    return status
+    return status.content
 
         
 
