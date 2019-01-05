@@ -1,1 +1,1 @@
-No Updates Available
+No-Updates-Available
