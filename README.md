@@ -27,7 +27,7 @@ This program uses Mingw Cross compiler to compile the Code to Windows Executable
 # Using for real time Development
 ```diff
 - It is highly recommended to NOT use this for Development! Use a Windows Machine for Windows Development instead.
-This is made for Tests/Research purposes only.
++ This is made for Tests/Research purposes only.
 ```
 # Dealing with Errors
 This Project is still in development. There may be alot of Errors that I don't know of. If you stumbled upon an Error, Please Report it.
