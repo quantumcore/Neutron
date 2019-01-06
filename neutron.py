@@ -1,6 +1,7 @@
 import neutron_core
 from neutron_core import clear_screen
 from neutron_core import showInfo
+from neutron_core import repository_status
 try:
     import tkinter
 except ImportError:
@@ -54,6 +55,10 @@ class GUI:
         self.update = Label(master, text="Version 2", fg="light cyan", bg="gray9")
         self.update.configure(font=("fixedsys", 8))
         self.update.pack()
+
+        self.status = Label(master, text=repository_status(), fg="cornflowerblue", bg="gray9")
+        self.status.configure(font=("fixedsys", 7))
+        self.status.pack()
 
         self.browse = Label(master, text="Select File to Compile",  fg="purple", bg="gray9")
         self.browse.configure(font=("fixedsys", 8))

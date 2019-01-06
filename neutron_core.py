@@ -27,7 +27,7 @@ def clear_screen():
     os.system("clear")
 
 
-
-
-        
-
+def repository_status():
+    status = requests.get("https://raw.githubusercontent.com/Fahad-M/Neutron/master/status.md")
+    data = status.content
+    return data
