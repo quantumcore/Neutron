@@ -33,7 +33,9 @@ def check_for_update():
     try:
         data = requests.get("https://raw.githubusercontent.com/Fahad-M/Neutron/master/update.md")
         status = data.content
-        if(status == "Update-Available"):
+        if(status == "No-Update-Available"):
+            pass
+        else:
             ask = messagebox.askquestion("Neutron", "A new Version of Neutron is available. Update?")
             if(ask == "yes"):
                 webbrowser.open_new("https://github.com/Fahad-M/Neutron")
