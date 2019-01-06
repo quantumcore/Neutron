@@ -26,21 +26,22 @@ def clear_screen():
     """ Clear the Screen """
     os.system("clear")
 
-
 def check_for_update():
     """ Check for Updates """
     print("Checking for updates")
     try:
         data = requests.get("https://raw.githubusercontent.com/Fahad-M/Neutron/master/update.md")
         status = data.content
-        if(status == "No-Update-Available"):
-            pass
-        else:
+        if(status == "Update-Available"):
+            print("An Update is availble.")
             ask = messagebox.askquestion("Neutron", "A new Version of Neutron is available. Update?")
             if(ask == "yes"):
                 webbrowser.open_new("https://github.com/Fahad-M/Neutron")
             else:
                 showInfo("Returning. It is recommended to update later.")
+                print("Update Canceled")
+        else:
+            pass
                 
     except requests.Timeout:
         status = "Internet Slow or not available"
@@ -49,6 +50,7 @@ def check_for_update():
         print(str(e))
         
     return status
+
 
 
         
