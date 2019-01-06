@@ -1,5 +1,4 @@
 import neutron_core
-from neutron_core import check_for_update
 from neutron_core import clear_screen
 from neutron_core import showInfo
 try:
@@ -52,7 +51,7 @@ class GUI:
         self.heading.configure(font=("fixedsys", 30))
         self.heading.pack()
 
-        self.update = Label(master, text=check_for_update(), fg="light cyan", bg="gray9")
+        self.update = Label(master, text="Version 2", fg="light cyan", bg="gray9")
         self.update.configure(font=("fixedsys", 8))
         self.update.pack()
 
