@@ -23,6 +23,7 @@ $ python3 neutron.py
 
 # How it works
 This program uses Mingw Cross compiler to compile the Code to Windows Executable. The uses Wine to run it.
+![Demo](https://i.imgur.com/ejLTfPQ.gif)
 
 # Using for real time Development
 ```diff
