@@ -32,7 +32,7 @@ def check_for_update():
     print("Checking for updates")
     try:
         data = requests.get("https://raw.githubusercontent.com/Fahad-M/Neutron/master/update.md")
-        status = data
+        status = data.content
         if(status == "Update-Available"):
             ask = messagebox.askquestion("Neutron", "A new Version of Neutron is available. Update?")
             if(ask == "yes"):
@@ -43,9 +43,11 @@ def check_for_update():
     except requests.Timeout:
         status = "Internet Slow or not available"
     except Exception as e:
-        status =  "Unknown error occured : " + str(e)
+        status =  "Unknown error occured"
+        print(str(e))
         
-    return status.content
+    return status
+
 
         
 
