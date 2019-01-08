@@ -11,31 +11,32 @@ except ImportError:
 from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
-import os, subprocess
+import os
 
 class GUI:
     def __init__(self, master):
 
         def create_file(file):
+            filename = self.BinaryName.get()
 
             def askToRun():
                 question = messagebox.askquestion("Neutron", "File is Compiled. Would you like to Run it now using Wine?")
                 if(question == "yes"):
                     print("==================================")
-                    print("Running your FILE")
+                    print("Running : " + filename)
                     print("==================================")
-                    os.system("wine " + file + ".exe")
+                    os.system("wine " + filename + ".exe")
                 else:
                     showInfo("Not Running.")
 
-            os.system("i686-w64-mingw32-g++ -o " + file + ".exe " + file + " --static")
+            os.system("i686-w64-mingw32-g++ -o " + filename + ".exe " + file + " --static")
 
             self.output = Entry(master, bg="gray9", fg="green", bd="1", width=30)
             self.output.configure(font=("monospace", 10))
             self.output.pack()
 
             try:
-                test = open(file+".exe")
+                test = open(filename+".exe")
                 self.output.insert(0,"Compilation Succeded!")
                 askToRun()
                 
@@ -52,7 +53,7 @@ class GUI:
         self.heading.configure(font=("fixedsys", 30))
         self.heading.pack()
 
-        self.update = Label(master, text="Version 2", fg="light cyan", bg="gray9")
+        self.update = Label(master, text="Version 3", fg="light cyan", bg="gray9")
         self.update.configure(font=("fixedsys", 8))
         self.update.pack()
 
@@ -71,6 +72,13 @@ class GUI:
         self.create = Label(master, text="Ready to Compile", fg="cornflowerblue", bg="gray9")
         self.create.configure(font=("monospace", 8))
         
+        self.entfilname = Label(master, text="Enter Filename", fg="green", bg="gray9")
+        self.entfilname.configure(font=("monospace", 8))
+
+        self.BinaryName = Entry(master)
+        self.BinaryName.configure(font=("fixedsys", 8))
+        self.BinaryName.configure(font=("fixedsys", 8))
+
         self.comButton = Button(master, text="Compile", fg="dodgerblue", bg="gray9", bd="1", command = lambda: create_file(self.file.name))
         self.comButton.configure(font=("fixedsys", 8))
 
@@ -82,9 +90,9 @@ class GUI:
                 print("Attribute Error. Maybe you pressed Cancel.")
             
             self.create.pack()
+            self.entfilname.pack()
+            self.BinaryName.pack()
             self.comButton.pack()
-
-
 
         self.ButtonBrowse = Button(master, text="Browse", fg="dodgerblue", bg="gray9", bd="1", command= lambda: Browse())
         self.ButtonBrowse.configure(font=("fixedsys", 8))
