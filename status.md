@@ -1,1 +1,1 @@
-This Project may end soon and be Read only.
+Neutron may end soon.
