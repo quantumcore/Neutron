@@ -38,4 +38,4 @@ PS : I would really appreciate if you would Contribute.
 # Contact
 Fahad Mustafa -
 
-[Website](www.fahadm.co.nf)
+[Website](http://fahadm.co.nf)
