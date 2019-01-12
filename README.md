@@ -34,6 +34,8 @@ This program uses Mingw Cross compiler to compile the Code to Windows Executable
 This Project is still in development. There may be alot of Errors that I don't know of. If you stumbled upon an Error, Please Report it.
 PS : I would really appreciate if you would Contribute.
 
+# Wiki
+Read the details, Purpose and Idea of this Project in the Wiki, [here](https://github.com/Fahad-M/Neutron/wiki)
 
 # Contact
 Fahad Mustafa -
