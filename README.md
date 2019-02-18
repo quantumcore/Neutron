@@ -4,7 +4,7 @@
 <p>
           <h1 align="center">🌟 Neutron 🌟</h1>
           <p align="center">
-          Easily Compile C/C++ Code on Linux for Windows!
+          Automate Compilation of Windows Binaries on any Linux Dist!
           </p>
 </p>
 
