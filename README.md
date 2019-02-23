@@ -40,4 +40,4 @@ Read the details, Purpose and Idea of this Project in the Wiki, [here](https://g
 # Contact
 Fahad Mustafa -
 
-[Website](http://fahadm.co.nf)
+[Website](https://fahad-m.github.io)
