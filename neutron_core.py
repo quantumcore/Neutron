@@ -29,6 +29,6 @@ def clear_screen():
 
 def repository_status():
     print("Fetching Status")
-    status = requests.get("https://raw.githubusercontent.com/Fahad-M/Neutron/master/status.md")
+    status = requests.get("https://raw.githubusercontent.com/lynxmk/Neutron/master/status.md")
     data = status.content
     return data
